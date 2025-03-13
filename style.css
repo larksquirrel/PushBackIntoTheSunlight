@@ -25,7 +25,7 @@ body {
 }
 
 #loginTitle, #gameRules h1 {
-    font-size: 64px;
+    font-size: 60px;
     font-weight: bold;
     margin: 0;
     margin-bottom: 20px;
@@ -78,7 +78,7 @@ canvas {
 }
 
     #endScreen h1 {
-        font-size: 64px; /* 与登录界面标题一致 */
+        font-size: 60px; /* 与登录界面标题一致 */
         font-weight: bold;
         margin: 0;
         margin-bottom: 20px;

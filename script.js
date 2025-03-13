@@ -150,9 +150,9 @@ function displayScore() {
     const xPosition = canvas.width * 0.25; // 画布宽度的 1/4 处
     const yPosition = 30; // 距顶部 30 像素
     if (score >= 99) {
-        ctx.fillText("分数: 黑花99", xPosition, yPosition); // 如果分数超过 99
+        ctx.fillText("进度: 黑花99", xPosition, yPosition); // 如果分数超过 99
     } else {
-        ctx.fillText(`分数: ${score}`, xPosition, yPosition); // 否则显示当前分数
+        ctx.fillText(`进度: ${score}`, xPosition, yPosition); // 否则显示当前分数
     }
 }
 
@@ -199,7 +199,7 @@ function updateGame() {
 
                     const targetX = canvas.width * 0.75 - item.width / 2;
                     const startX = item.x;
-                    const animationDuration = 1000;
+                    const animationDuration = 500;
                     const startTime = Date.now();
 
                     function animate() {
@@ -213,7 +213,7 @@ function updateGame() {
                             setTimeout(() => {
                                 items = items.filter(i => i !== item);
                                 score += 3;
-                            }, 1500);
+                            }, 1000);
                         }
                     }
                     animate();
@@ -249,17 +249,21 @@ function updateGame() {
 }
 
 function endGame() {
-    // 显示游戏结束界面
-    const endScreen = document.getElementById("endScreen");
-    endScreen.style.display = "block";
-
-    // 隐藏画布
-    const canvas = document.getElementById("gameCanvas");
-    canvas.style.display = "none";
-
-    /// 设置 2 秒后切换到最终界面
+    // 延时 1.5 秒后显示游戏结束界面
     setTimeout(() => {
-        endScreen.style.display = "none"; // 隐藏结束界面
-        finalScreen.style.display = "block"; // 显示最终界面
-    }, 2000); // 延时 2000 毫秒 (2 秒)
+        // 显示游戏结束界面
+        const endScreen = document.getElementById("endScreen");
+        endScreen.style.display = "block";
+
+        // 隐藏画布
+        const canvas = document.getElementById("gameCanvas");
+        canvas.style.display = "none";
+
+        // 设置 3 秒后切换到最终界面
+        setTimeout(() => {
+            endScreen.style.display = "none"; // 隐藏结束界面
+            const finalScreen = document.getElementById("finalScreen"); // 确保 finalScreen 已定义
+            finalScreen.style.display = "block"; // 显示最终界面
+        }, 3000); // 延时 3000 毫秒 (3 秒)
+    }, 1500); // 延时 1500 毫秒 (1.5 秒)
 }
