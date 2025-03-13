@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【黑花】你就在阳光下说</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 登录界面 -->
+    <div class="container" id="loginScreen">
+        <h1 id="loginTitle" style="margin-top: 10%;">你就在阳光下说</h1>
+        <p style="margin-top: 5%;">输入【黑花99】开始游戏</p>
+        <input type="text" id="loginInput" placeholder="请输入暗号">
+        <button onclick="checkLogin()">确认</button>
+        <p id="errorMessage" style="color: red;"></p>
+    </div>
+
+    <!-- 游戏规则界面 -->
+    <div class="container" id="gameRules" style="display:none;">
+        <h1 id="gameRulesTitle" style="margin-top:40%;">游戏规则</h1>
+        <p>帮【狐狸小解】把【浣熊老齐】推到阳光里吧！</p>
+        <p>得分达到黑花99即为帮助成功：</p>
+        <p>推回 [老齐] +3分，接住 [海棠花] +1分，接住 [墨镜] -1分</p>
+        <button onclick="startGame()">进入游戏</button>
+    </div>
+
+    <!-- 游戏画布 -->
+    <canvas id="gameCanvas" style="display:none;"></canvas>
+
+    <!-- 背景音乐 -->
+    <audio id="backgroundMusic" src="flowerday.mp3" loop></audio>
+
+    <!-- 游戏结束界面 -->
+    <div id="endScreen" style="display:none;">
+        <h1 style="margin-top:50%;">游戏结束</h1>
+        <p>谢谢你帮小解把老齐推回阳光里</p>
+    </div>
+
+    <!-- 最终界面 -->
+    <div id="finalScreen" style="display:none; background-color: #f7f1b3; text-align: center;">
+        <h1 style="color: #4d4a48; margin-top:40%;">
+            黑眼镜走过来，被解雨臣用手指挡在了暗影之外，推了回去。<br>
+            解雨臣说道：“你就站在阳光里说。”
+        </h1>
+        <img src="5.png" alt="图片描述" style="max-width: 90%; margin-top: 20px;">
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
