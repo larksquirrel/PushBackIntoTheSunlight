@@ -143,6 +143,21 @@
     <None Include="script.js" />
     <None Include="style.css" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\1.png" />
+    <Image Include="..\..\2.png" />
+    <Image Include="..\..\3.png" />
+    <Image Include="..\..\4.png" />
+    <Image Include="..\..\6.jpg" />
+    <Image Include="5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\222.ttf" />
+    <Font Include="111.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="flowerday.mp3" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

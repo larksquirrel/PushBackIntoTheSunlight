@@ -14,4 +14,48 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="index.html">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="script.js">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="style.css">
+      <Filter>源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\1.png">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="..\..\2.png">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="..\..\3.png">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="..\..\4.png">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="5.png">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="..\..\6.jpg">
+      <Filter>源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="111.ttf">
+      <Filter>源文件</Filter>
+    </Font>
+    <Font Include="..\..\222.ttf">
+      <Filter>源文件</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="flowerday.mp3">
+      <Filter>源文件</Filter>
+    </Media>
+  </ItemGroup>
 </Project>

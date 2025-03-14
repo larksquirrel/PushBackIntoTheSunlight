@@ -109,7 +109,7 @@ function generateItems() {
             width: 50 * sizeMultiplier,
             height: 50 * sizeMultiplier
         });
-    }, 800);
+    }, 600);
 }
 
 let moveLeft = false;
